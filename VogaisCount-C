@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char palavra[50];
+    int i, vogais = 0;
+
+    printf("Digite uma palavra: ");
+    scanf("%s", palavra);
+
+    for(i = 0; i < strlen(palavra); i++) {
+        if(palavra[i] == 'a' || palavra[i] == 'e' || palavra[i] == 'i' || palavra[i] == 'o' || palavra[i] == 'u' || palavra[i] == 'A' || palavra[i] == 'E' || palavra[i] == 'I' || palavra[i] == 'O' || palavra[i] == 'U') {
+            vogais++;
+        }
+    }
+
+    printf("A palavra %s tem %d vogais.\n", palavra, vogais);
+
+    return 0;
+}
